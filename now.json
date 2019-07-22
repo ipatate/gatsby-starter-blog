@@ -10,6 +10,7 @@
   ],
   "routes": [
     { "src": "/(.+)", "dest": "public/$1" },
+    { "src": "/admin", "dest": "admin" },
     {
       "src": "/sw.js",
       "dest": "build/sw.js",
