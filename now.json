@@ -7,5 +7,13 @@
       "use": "@now/static-build",
       "config": { "distDir": "public" }
     }
+  ],
+  "routes": [
+    { "src": "/(.+)", "dest": "public/$1" },
+    {
+      "src": "/sw.js",
+      "dest": "build/sw.js",
+      "headers": { "cache-control": "no-cache" }
+    }
   ]
 }
