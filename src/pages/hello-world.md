@@ -20,4 +20,4 @@ Oh, and here's a great quote from this Wikipedia on
 
 ![Chinese Salty Egg](../uploads/salty_egg.jpg)
 
-![computer badass !](/uploads/artem-sapegin-DErxVSSQNdM-unsplash.jpg "Computer")
+![computer](static/artem-sapegin-DErxVSSQNdM-unsplash.jpg "hello")
