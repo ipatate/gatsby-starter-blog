@@ -24,4 +24,4 @@ Oh, and here's a great quote from this Wikipedia on
 console.log('hello world')
 ```
 
-![](static/artem-sapegin-DErxVSSQNdM-unsplash.jpg)
+![](/artem-sapegin-DErxVSSQNdM-unsplash.jpg)
