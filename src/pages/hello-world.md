@@ -20,4 +20,8 @@ Oh, and here's a great quote from this Wikipedia on
 
 ![Chinese Salty Egg](../uploads/salty_egg.jpg)
 
-![computer](static/artem-sapegin-DErxVSSQNdM-unsplash.jpg "hello")
+```js
+console.log('hello world')
+```
+
+![](static/artem-sapegin-DErxVSSQNdM-unsplash.jpg)
