@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Link,graphql } from 'gatsby'
+import { Link, graphql, img } from 'gatsby'
 import get from 'lodash/get'
 
 import Bio from '../components/Bio'
@@ -21,6 +21,9 @@ class BlogPostTemplate extends React.Component {
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
+        {post.frontmatter.poster && (
+          <img src={post.frontmatter.poster.publicURL} />
+        )}
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
@@ -50,20 +53,18 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           <li>
-            {
-              previous &&
+            {previous && (
               <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
-            }
+            )}
           </li>
           <li>
-            {
-              next &&
+            {next && (
               <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
-            }
+            )}
           </li>
         </ul>
       </Layout>
@@ -86,6 +87,9 @@ export const pageQuery = graphql`
       excerpt
       html
       frontmatter {
+        poster {
+          publicURL
+        }
         title
         date(formatString: "MMMM DD, YYYY")
       }
